@@ -32,9 +32,9 @@ ssh -p22 -i NAME.pem -N -R 0.0.0.0:8080:127.0.0.1:8080 USER@IP
 
 ## 后记
 在使用端口映射时我就冒出过另外一个问题，端口映射能够将服务器的某个端口接收到的服务都映射到本地电脑，但如何控制本地电脑所有发出的请求也走服务器昵？我们都知道本地发起网络请求时，发起请求的端口是不完全可控的。因此即使使用了端口映射，无非是实现了一个代理人将听到的话讲述给我，但我还是要和外来者直接对话的局面，如下图，完全经由代理人来完成转化呢？
-![]()
+![](https://github.com/HaythamXu/Blogs/blob/main/picture/001%20SSH%20Tunnel%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/01.jpeg)
 
 我们唯一需要做的就是让个人电脑发起的所有请求都经过具有固定ip的云服务器来完成，推荐工具比如“TinyProxy”，但由于某些原因，此处不介绍了，有兴趣的读者可以自行查阅文档实现。
 
 当端口映射和TinyProxy均搭建起来后，ECS将变成我们PC在Internet的代言人，就是实现了下图所示的效果。
-![]()
+![](https://github.com/HaythamXu/Blogs/blob/main/picture/001%20SSH%20Tunnel%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/02.jpeg)
