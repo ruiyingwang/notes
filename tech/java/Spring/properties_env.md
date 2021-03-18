@@ -8,6 +8,52 @@ System.getenv( ) 环境变量
 System.getenv("githubtoken"));
 System.getProperty( "user.dir" ));
 ```
+
+
+## Properties读取
+#### 字符类型
+```
+KEY_NAME=value
+
+@Value("${KEY_NAME}")
+private String VARABLE_NAME;
+```
+#### 数组
+```
+KEY_NAME=1,2,3,4,5,6
+
+@Value"${KEY_NAME}"）
+private String[] elementToSearch; 
+```
+
+## Pom.xml读取
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 >         System.out.println("java_vendor:"  + System.getProperty( "java.vendor" ));
         System.out.println("java_vendor_url:" + System.getProperty("java.vendor.url" ));
         System.out.println("java_home:"  + System.getProperty( "java.home" ));
@@ -29,13 +75,3 @@ System.getProperty( "user.dir" ));
         System.out.println("file_separator:" + System.getProperty("file.separator" ));
         System.out.println("path_separator:" + System.getProperty("path.separator" ));
         System.out.println("line_separator:" + System.getProperty("line.separator" ));
-
-
-## Properties读取
-
-```
-@Value("${KEY_NAME}")
-private String VARABLE_NAME;
-```
-
-## Pom.xml读取
