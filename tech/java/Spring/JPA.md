@@ -65,28 +65,6 @@ keyword
 * 
 
 ```java
-ApplicationConfiguration.java extends AbstractCMDBEntity implements ProjectAwareEntity
-    @OneToMany(mappedBy = "application", cascade = CascadeType.ALL)
-    private List<ServiceConfiguration> services;
-
-ServiceConfiguration.java extends AbstractCMDBEntity implements ProjectAwareEntity, PropertySource 
-    @ManyToOne(optional=false, cascade = CascadeType.REFRESH)
-    private ApplicationConfiguration application;
-
-    // -----------------------
-    
-Customer.java 
-    @OneToMany(mappedBy = "customer")
-    private Set<Project> projects;
-
-Project.java
-    @ManyToOne
-    @JoinColumn(name = "customer_id", nullable = false)
-    private Customer customer;
-
-
-
-
 
 ```
 
