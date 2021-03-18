@@ -21,4 +21,5 @@ telnet ip port
 ```
 ssh -i key.pem user@ip
 ```
-
+* https://blog.csdn.net/chushoufengli/article/details/96842820
+* https://blog.csdn.net/nahancy/article/details/51052127
