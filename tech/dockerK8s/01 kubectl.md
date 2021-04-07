@@ -12,6 +12,5 @@ kubectl get|edit|describe|logs
 ```
 
 ```
-
 kubectl cluster-info --context kind-mtdevops
 ```

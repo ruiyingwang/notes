@@ -1,3 +1,5 @@
+
+#### 特殊字符
 ~   tilde or swung dash 波浪字符或代字号
 !   exclamation mark    惊叹号
 @   at sign or commercial at    爱特或小老鼠
@@ -33,3 +35,11 @@ _   underscore  下划线
 |   vertical bar    竖线
 “   quotation mark  双引号
 ‘   apostrophe  单引号，省略符号
+
+#### 时间表达
+* 8：00——eight(o’clock)
+* 8:10 ten past eight 
+* 9:50——ten to ten
+* 9：15——a quarter past nine
+* 11：30——half past eleven
+

@@ -3,14 +3,12 @@
 * .git
 * .gitignore
 
-
 ## Branch
 * 切换远程分支`a`
 * 查看一个分支的父分支`git reflog show BRANCH_NAME`
 * 
 
 #### Stash
-
 
 #### 配置
 * 查看当前虽有配置 `git config -l`
@@ -37,8 +35,9 @@ git fetch origin temp:temp
 ```
 
 
-
 * [查看已暂存和未暂存的修改](https://www.cnblogs.com/beenupper/p/12526914.html)
 * [Git 如何放弃所有本地修改](https://www.cnblogs.com/chenjo/p/11398357.html)
+* [使用 Git 時如何做出跨 repo 的 cherry-pick](https://blog.m157q.tw/posts/2017/12/30/git-cross-repo-cherry-pick/)
+
 
 <meta http-equiv="refresh" content="5">

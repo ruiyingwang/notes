@@ -14,7 +14,7 @@ kubectl cp fluent-bit-26tbf:/fluent-bit/etc/ -c fluent-bit -n logging /Users/i35
 
 ## 概念
 * 
-    * node:	“物理节点”实体机器或VM
+    * node: “物理节点”实体机器或VM
     * lable: 贴标示，可用于node, 
     * pod: kubernetes 中最小的编排单位, 内部有1～n个容器组成 
     * Service: 后端真实服务的抽象，一个 Service 可以代表多个相同的后端服务,代表多个container
@@ -30,8 +30,8 @@ kubectl cp fluent-bit-26tbf:/fluent-bit/etc/ -c fluent-bit -n logging /Users/i35
     * operator:
     * configmap:
 
-
-
+## 更新configmap
+可以使用edit命令直接修改，但是要解决修改被捕捉到问题，也许需要一个operator来更新pod
 
 
 <meta http-equiv="refresh" content="3">
