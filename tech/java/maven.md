@@ -9,4 +9,10 @@
 * mvn deploy: clean resource compile testResources testCompile test jar install deploy
 
 
-* -pl
+## Maven - pom.xml
+
+```xml
+<parent>
+
+</parent>
+```

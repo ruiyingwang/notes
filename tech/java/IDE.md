@@ -16,5 +16,3 @@ mvn spring-boot:run -Pdevelopment-mysql
 
 export CATALINA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=9098"
 ```
-
-<meta http-equiv="refresh" content="5">
