@@ -29,9 +29,9 @@ public class TreeApplication {
 
     @Test
     public void t001BuildTree() {
-        Assertions.assertEquals(OperateTree.breadthFirstSearch(TreeApplication.ROOT_FULL, null), List.of(0,1,2,3,4,5,6));
-        Assertions.assertEquals(OperateTree.breadthFirstSearch(TreeApplication.ROOT_NOT_FULL, null), List.of(0,1,2,3,4,5));
-        Assertions.assertEquals(OperateTree.breadthFirstSearch(TreeApplication.ROOT_WITH_NULL, null), List.of(0,1,2,3,4,6));
+        this.checkTree(TreeApplication.ROOT_FULL, List.of(0,1,2,3,4,5,6));
+        this.checkTree(TreeApplication.ROOT_NOT_FULL, List.of(0,1,2,3,4,5));
+        this.checkTree(TreeApplication.ROOT_WITH_NULL, List.of(0,1,2,3,4,6));
     }
 
     @Test
@@ -51,5 +51,10 @@ public class TreeApplication {
 
     @Test void t005GetNodeHeight() {
         Assertions.assertEquals(SearchTree.getNodeHeight(TreeApplication.ROOT_FULL, 2), 2);
+    }
+
+    private void checkTree(BTNode actualTree, List<Integer> expectedTree) {
+        Assertions.assertEquals(OperateTree.breadthFirstSearch(actualTree, null), expectedTree);
+
     }
 }
